@@ -1,0 +1,182 @@
+name: EssentialsLitePlus
+main: tk.FunkDev.EssentialsLitePlus.Core
+description: EssentialsLite-Plus, the most essential customizable plugin ever known to man kind!
+version: 0.7.8.1
+author: funkemunky, FunkDev founder.
+commands:
+  essentialsliteplus:
+    description: The EssentialsLite-Plus control panel.
+    aliases: [elp, el+]
+  fly:
+    description: Fly settings command.
+  kill:
+    description: Kill another player!
+  suicide:
+    description: Kill yourself.
+  heal:
+    description: Heal yourself or others!
+  feed:
+    description: Feed yourself or others!
+  speed:
+    description: Set your walk or fly speed.
+  sethunger:
+    description: Set your hunger or another's to whatever you wish.
+  nick:
+    descrpition: Set yourself a nickname.
+  iteminfo:
+    description: Hold on item and get its info!
+  me:
+    description: Broadcast a fake action!
+  sethealth:
+    description: Set your own health to a selected level.
+  enderchest:
+    description: See your enderchest or another's!
+  gamemode:
+    description: Set your gamemode to whatever you wish!
+    aliases: [gm, mode]
+  survival:
+    description: Set your gamemode to survival!
+    aliases: [s, gms]
+  creative:
+    description: Set your gamemode to creative!
+    aliases: [c, gmc]
+  adventure:
+    description: Set your gamemdoe to adventure!
+    aliases: [a, gma]
+  invsee:
+    description: See someone's inventory!
+permissions:
+  el+.admin:
+    default: op
+    description: Admin control panel node.
+  el+.*:
+    default: false
+    description: All commands node.
+    children:
+      el+.cmd.fly: true
+      el+.cmd.kill: true
+      el+.cmd.suicide: true
+      el+.cmd.heal: true
+      el+.cmd.heal.others: true
+      el+.cmd.feed: true
+      el+.cmd.feed.others: true
+      el+.cmd.speed: true
+      el+.cmd.name: true
+      el+.cmd.spawn: true
+      el+.cmd.setspawn: true
+      el+.cmd.sethunger: true
+      el+.cmd.nick: true
+      el+.controlpanel: true
+      el+.cmd.iteminfo: true
+      el+.cmd.me: true
+      el+.cmd.sethealth: true
+      el+.cmd.enderchest: true
+      el+.invadmin: true
+      el+.antispam.bypass: true
+      el+.signs.create.heal: true
+      el+.signs.use.heal: true
+      el+.signs.colored: true
+      el+.cmd.gamemode: true
+      el+.cmd.gamemode.survival: true
+      el+.cmd.gamemode.creative: true
+      el+.cmd.gamemode.adventure: true
+  el+.cmd.fly:
+    default: op
+    description: Fly command node.
+  el+.cmd.kill:
+    default: op
+    description: Kill command node.
+  el+.cmd.suicide:
+    default: op
+    description: Suicide command node.
+  el+.cmd.heal:
+    default: op
+    description: Heal command node.
+  el+.cmd.heal.others:
+    default: op
+    description: Heal others node.
+  el+.cmd.feed:
+    default: op
+    description: Feed command node.
+  el+.cmd.feed.others:
+    default: op
+    description: Feed others node.
+  el+.cmd.speed:
+    default: op
+    description: Speed command node.
+  el+.cmd.setwarp:
+    default: op
+    description: SetWarp command node.
+  el+.cmd.warp:
+    default: op
+    description: Warp command node.
+  el+.cmd.delwarp:
+    default: op
+    description: Delwarp command node.
+  el+.cmd.warp.*:
+    default: op
+    description: All warps node.
+  el+.cmd.spawn:
+    default: op
+    description: Spawn command node.
+  el+.cmd.setspawn:
+    default: op
+    description: Setspawn command node.
+  el+.cmd.sethunger:
+    default: op
+    descrpition: Sethunger command node.
+  el+.cmd.nick:
+    default: op
+    description: Nick command node.
+  el+.cmd.controlpanel:
+    default: op
+    description: Open ControlPanel node.
+  el+.cmd.iteminfo:
+    default: op
+    description: ItemInfo command node.
+  el+.cmd.me:
+    default: op
+    description: Me command node.
+  el+.cmd.sethealth:
+    default: op
+    description: SetHeath command node.
+  el+.cmd.enderchest:
+    default: op
+    description: EnderChest command node.
+  el+.invadmin:
+    default: op
+    description: Inventory Admin node.
+  el+.antispam.bypass:
+    default: op
+    description: AntiSpam bypass node.
+  el+.signs.create.heal:
+    default: op
+    description: Create heal sign node.
+  el+.signs.use.heal:
+    default: op
+    description: Use heal sign node.
+  el+.signs.colored:
+    default: op
+    description: Create colored signs node.
+  el+.cmd.gamemode:
+    default: op
+    description: Access to gamemode node.
+  el+.cmd.gamemode.survival:
+    default: op
+    description: Set gm to survival node.
+  el+.cmd.gamemode.creative:
+    default: op
+    description: Set gm to creative node.
+  el+.cmd.gamemode.adventure:
+    default: op
+    description: Set gm to adventure node.
+  el+.cmd.gamemode.*:
+    default: op
+    description: Set your gamemode to anything node.
+    children:
+      el+.cmd.gamemode.survival: true
+      el+.cmd.gamemode.creative: true
+      el+.cmd.gamemode.adventure: true
+  el+.cmd.invsee:
+    default: op
+    description: Invsee command node.

@@ -1,0 +1,59 @@
+# Welcome to the EssentialsLitePlus v0.7.5 Configuration File!
+Commands:
+  Fly:
+    Enabled: true
+    Messages:
+      FlyOff: '&4You can no longer fly!'
+      FlyOn: '&aYou can now fly!'
+  Kill:
+    Enabled: true
+    Messages:
+      PlayerNotificationMsg: '&3You have been killed by %PlayerSenderName%!'
+      SenderMsg: '&3Player %PlayerKilledName% has been successfully eliminated!'
+  Suicide:
+    Enabled: true
+    Messages:
+      SenderMessage: '&4&lGoodbye world! :`('
+  Heal:
+    Enabled: true
+    Messages:
+      PlayerHealed: '&3You have been healed!'
+      OtherPlayerHealed: '&3You have been healed by %PlayerName%!'
+  Feed:
+    Enabled: true
+    Messages:
+      PlayerFed: '&3You have been fed to the brim!'
+  Speed:
+    Enabled: true
+    Messages:
+      FlySpeed: '&3Fly speed set to %FlySpeed%.'
+      WalkSpeed: '&3Walk speed set to %WalkSpeed%.'
+  SetHunger:
+    Enabled: true
+  Nick:
+    Enabled: true
+  ItemInfo:
+    Enabled: true
+  Me:
+    Enabled: true
+    Messages:
+      MeMessage: '%PlayerName% %MeMessage%'
+  SetHealth:
+    Enabled: true
+  EnderChest:
+    Enabled: true
+  Gamemode:
+    Enabled: true
+    Messages:
+      SetGamemode: '&bYou have set your gamemode to &c%Gamemode%&b!'
+  Invsee:
+    Enabled: true
+NoPermMsg: '&cSorry, you do not have permission for this EssentialsLitePlus command!'
+RemoveNicknameOnLeave: false
+NickNameHeader: '*'
+#
+#Lightning strikes on the location of player death. Fireworks burst on a mob's death.
+OnDeathMisc: false
+#
+#A little something for when players join to the lobby of a hub server.
+PlayerJoinFireworks: false
