@@ -1,0 +1,102 @@
+name: EssentialsLitePlus
+main: tk.FunkDev.EssentialsLitePlus.Core
+description: EssentialsLite-Plus, the most essential customizable plugin ever known to man kind!
+version: 0.7.0
+author: funkemunky, FunkDev founder.
+commands:
+  essentialsliteplus:
+    description: The EssentialsLite-Plus control panel.
+    aliases: [elp, el+]
+  fly:
+    description: Fly settings command.
+  kill:
+    usage: /<command> <player>
+    description: Kill another player!
+  suicide:
+    description: Kill yourself.
+  heal:
+    usage: /<command> <player>
+    description: Heal yourself or others!
+  feed:
+    description: Feed yourself or others!
+  speed:
+    description: Set your walk or fly speed.
+  sethunger:
+    usage: /<command> <level>
+    description: Set your hunger or another's to whatever you wish.
+  nick:
+    usage: /<command> <nickname>
+    descrpition: Set yourself a nickname.
+permissions:
+  el+.admin:
+    default: op
+    description: Admin control panel node.
+  el+.*:
+    default: false
+    description: All commands node.
+    children:
+      el+.cmd.fly: true
+      el+.cmd.kill: true
+      el+.cmd.suicide: true
+      el+.cmd.heal: true
+      el+.cmd.heal.others: true
+      el+.cmd.feed: true
+      el+.cmd.feed.others: true
+      el+.cmd.speed: true
+      el+.cmd.name: true
+      el+.cmd.spawn: true
+      el+.cmd.setspawn: true
+      el+.cmd.sethunger: true
+      el+.cmd.nick: true
+      el+.controlpanel: true
+  el+.cmd.fly:
+    default: op
+    description: Fly command node.
+  el+.cmd.kill:
+    default: op
+    description: Kill command node.
+  el+.cmd.suicide:
+    default: op
+    description: Suicide command node.
+  el+.cmd.heal:
+    default: op
+    description: Heal command node.
+  el+.cmd.heal.others:
+    default: op
+    description: Heal others node.
+  el+.cmd.feed:
+    default: op
+    description: Feed command node.
+  el+.cmd.feed.others:
+    default: op
+    description: Feed others node.
+  el+.cmd.speed:
+    default: op
+    description: Speed command node.
+  el+.cmd.setwarp:
+    default: op
+    description: SetWarp command node.
+  el+.cmd.warp:
+    default: op
+    description: Warp command node.
+  el+.cmd.delwarp:
+    default: op
+    description: Delwarp command node.
+  el+.cmd.warp.*:
+    default: op
+    description: All warps node.
+  el+.cmd.spawn:
+    default: op
+    description: Spawn command node.
+  el+.cmd.setspawn:
+    default: op
+    description: Setspawn command node.
+  el+.cmd.sethunger:
+    default: op
+    descrpition: Sethunger command node.
+  el+.cmd.nick:
+    default: op
+    description: Nick command node.
+  el+.cmd.controlpanel:
+    default: op
+    description: Open ControlPanel node.

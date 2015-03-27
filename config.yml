@@ -1,0 +1,38 @@
+Commands:
+  Fly:
+    Enabled: true
+    Messages:
+      FlyOff: '&4You can no longer fly!'
+      FlyOn: '&aYou can now fly!'
+  Kill:
+    Enabled: true
+    Messages:
+      PlayerNotificationMsg: '&3You have been killed by %PlayerSenderName%!'
+      SenderMsg: '&3Player %PlayerKilledName% has been successfully eliminated!'
+  Suicide:
+    Enabled: true
+    Messages:
+      SenderMessage: '&4&lGoodbye world! :`('
+  Heal:
+    Enabled: true
+    Messages:
+      PlayerHealed: '&3You have been healed!'
+      OtherPlayerHealed: '&3You have been healed by %PlayerName%!'
+  Feed:
+    Enabled: true
+    Messages:
+      PlayerFed: '&3You have been fed to the brim!'
+  Speed:
+    Enabled: true
+    Messages:
+      FlySpeed: '&3Fly speed set to %FlySpeed%.'
+      WalkSpeed: '&3Walk speed set to %WalkSpeed%.'
+  SetHunger:
+    Enabled: true
+    Messages:
+      SetHungerMsg: '&aYou have set your hunger to %HungerLevel%!'
+      SetOtherHungerMsg: '&a%PlayerName% has set your hunger to level %HungerLevel%'
+  Nick:
+    Enabled: true
+NoPermMsg: '&cSorry, you do not have permission for this command!'
+RemoveNicknameOnLeave: false
